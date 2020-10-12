@@ -7,6 +7,7 @@ import { Container } from "semantic-ui-react";
 import Register from "./components/Register";
 import Login from "./components/Login";
 import FetchUser from "./components/FetchUser";
+import Available from "./components/Available";
 import ProtecedRoute from "./components/ProtectedRoute";
 
 // anything in fetchuser will be hidden while that checkuser function is running
@@ -22,6 +23,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/available" component={Available} />
             <ProtecedRoute exact path="/thingsDemo" component={ThingsDemo} />
           </Switch>
         </FetchUser>
