@@ -34,8 +34,8 @@ cities = [
   end
 
   50.times do
-    sold = Faker::Boolean.boolean(0.3)
-    sold = rand(2).even?
+    # sold = Faker::Boolean.boolean(0.3)
+    sold = rand(3) % 3 === 0
     price = rand(99000..1500000)
     percent_change = (-3..3).to_a.sample.to_f / 100
     sold_price = sold ? price * (1 + percent_change) : nil
