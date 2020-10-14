@@ -10,12 +10,13 @@ import FetchUser from "./components/FetchUser";
 import Available from "./components/Available";
 import MyPag from "./components/MyPag";
 import ProtecedRoute from "./components/ProtectedRoute";
+import Cities from "./components/Cities";
 
 // anything in fetchuser will be hidden while that checkuser function is running
 
 function App() {
   return (
-    <>
+    <div>
       <NavBar />
 
       <Container>
@@ -26,11 +27,13 @@ function App() {
             <Route exact path="/login" component={Login} />
             <Route exact path="/available" component={Available} />
             <Route exact path="/mypag" component={MyPag} />
+            <Route exact path="/cities" component={Cities} />
+
             <ProtecedRoute exact path="/thingsDemo" component={ThingsDemo} />
           </Switch>
         </FetchUser>
       </Container>
-    </>
+    </div>
   );
 }
 
