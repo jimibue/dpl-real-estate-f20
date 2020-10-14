@@ -11,6 +11,7 @@ import Available from "./components/Available";
 import MyPag from "./components/MyPag";
 import ProtecedRoute from "./components/ProtectedRoute";
 import Cities from "./components/Cities";
+import FindHomes from "./components/FindHomes";
 
 // anything in fetchuser will be hidden while that checkuser function is running
 
@@ -28,6 +29,7 @@ function App() {
             <Route exact path="/available" component={Available} />
             <Route exact path="/mypag" component={MyPag} />
             <Route exact path="/cities" component={Cities} />
+            <Route exact path="/findHomes" component={FindHomes} />
 
             <ProtecedRoute exact path="/thingsDemo" component={ThingsDemo} />
           </Switch>

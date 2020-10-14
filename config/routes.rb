@@ -5,5 +5,12 @@ Rails.application.routes.draw do
     resources :things
     get "properties", to: "properties#index"
     get "cities/:city", to: "properties#city"
+
+    get "agents", to: "agents#index"
+    get "agents/:id", to: "agents#show"
+
+    get "buyers/:id", to: "buyers#show"
+
+    # resources :agents, only: [:index, :show]
   end
 end
