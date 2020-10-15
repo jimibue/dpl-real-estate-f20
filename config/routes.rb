@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
     get "buyers/:id", to: "buyers#show"
 
-    get "p/city_cost", to: "properties#city_cost"
+    get "properties/city_cost", to: "properties#city_cost"
 
     # resources :agents, only: [:index, :show]
   end
