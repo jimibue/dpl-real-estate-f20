@@ -20,6 +20,10 @@ class Api::PropertiesController < ApplicationController
     render json: { properties: properties, total_pages: total_pages }
   end
 
+  def city_cost
+    render json: Address.cost_by_city
+  end
+
   private
 
   def set_page
